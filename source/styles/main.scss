@@ -1,0 +1,71 @@
+@use 'cores';
+@use 'fonts';
+
+body {
+    background-color: cores.$corFundo;
+    font-family: fonts.$fontePrincipal;
+    font-size: fonts.$tamanhoPadrao;
+}
+
+a {
+    color: cores.$corTres;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1920px;
+    width: 70%;
+    margin: 5% auto;
+}
+
+header {
+    background-color: cores.$corDois;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+input {
+    width: 200px;
+    padding: 8px;
+    border: none;
+}
+
+button {
+    width: 100px;
+    padding: 8px;
+    background-color: cores.$corPrincipal;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        background-color: cores.$corDois;
+    }
+}
+
+.main {
+    background-color: cores.$corTres;
+    padding: 16px;
+    color: #fff;
+    border-radius: 0 0 15px 15px;
+
+    .img-container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 2%;
+        margin-bottom: 50px;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
