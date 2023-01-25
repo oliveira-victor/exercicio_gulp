@@ -1,0 +1,1 @@
+function informaNome(){var e=document.querySelector("#nome");""==e.value?alert("Por favor, informe um nome."):(document.querySelector(".user-text").innerHTML=`Olá <strong>${e.value}</strong>! `,e.value="")}
